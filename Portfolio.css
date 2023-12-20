@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: aliceblue;
+    display: flex;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(60, 40, 40, 0.9);
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: beige;
+    color: black;
+}
+
+.LOGO {
+    position: fixed;
+    left: 40px;
+    font-size: 2.4rem;
+    background-color: rgb(156, 236, 241, 0.3);
+    border-radius: 10px;
+    color: rgb(130, 245, 191);
+}
+
+.menu{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+/* Main div css code */
+
+.main {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+}
+
+.info p {
+    width: 50%;
+    margin: 10px;
+}
+
+/* Footer CSS Code */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(63, 55, 55);
+    color: white;
+    padding: 0px 10px;
+}
+
+.footer P {
+    font-size: 20px;
+}
+
+
+/* Code for Nave Bar for max-width 800px */
+@media only screen and (max-width: 800px) {
+    a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .LOGO {
+        font-size: 30px;
+        left: 12px;
+    }
+}
+
+/* Code for Nave Bar for max-width 654px */
+@media only screen and (max-width: 654px) {
+    a {
+        font-size: 15px;
+        padding: 10px 5px;
+        border-radius: 15px;
+        background-color: bisque;
+        color: black;
+        font-size: 15px;
+    }
+
+    .LOGO {
+        font-size: 25px;
+        left: 8px;
+    }
+}
+
+/* Nave bar button visibility hide */
+@media only screen and (max-width: 490px) {
+    a {
+        display: none;
+    }
+    .nav{
+        height: 10vh;
+    }
+}
+
+/* Nave menu hide and show */
+@media only screen and (min-width: 490px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .profilePic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .image {
+        margin-right: 30px;
+    }
+
+    .info {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+}
+
+/* Meadia for main wraping */
+
+@media only screen and (max-width: 658px) {
+    .main {
+        flex-wrap: wrap-reverse;
+        margin-top: 10vh;
+        margin-bottom: 12vh;
+        overflow-y: auto;
+    }
+}
